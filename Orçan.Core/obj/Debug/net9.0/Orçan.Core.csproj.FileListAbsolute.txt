@@ -1,0 +1,11 @@
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\bin\Debug\net9.0\Orçan.Core.deps.json
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\bin\Debug\net9.0\Orçan.Core.dll
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\bin\Debug\net9.0\Orçan.Core.pdb
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.AssemblyInfoInputs.cache
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.AssemblyInfo.cs
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.dll
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\refint\Orçan.Core.dll
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.pdb
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\ref\Orçan.Core.dll
