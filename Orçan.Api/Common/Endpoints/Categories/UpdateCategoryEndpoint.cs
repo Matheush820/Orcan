@@ -3,6 +3,7 @@ using Orçan.Api.Handlers;
 using Orçan.Core.Models;
 using Orçan.Core.Requests.Categories;
 using Orçan.Core.Responses;
+using System.Security.Claims;
 
 namespace Orçan.Api.Common.Endpoints.Categories;
 
@@ -16,9 +17,13 @@ public class UpdateCategoryEndpoint : IEndpoint
        .WithOrder(2)
        .Produces<Response<Category?>>();
 
-    private static async Task<IResult> HandleAsync(ICategoryHandler handler, UpdateCategoryRequest request, long id)
+    private static async Task<IResult> HandleAsync(
+        ClaimsPrincipal user,
+        ICategoryHandler handler,
+        UpdateCategoryRequest request,
+        long id)
     {
-        request.UserId = "Matheuszin";
+        request.UserId = user.Identity?.Name ?? string.Empty;
         request.Id = id;
         var result = await handler.UpdateAsync(request);
         if (result.IsSuccess)

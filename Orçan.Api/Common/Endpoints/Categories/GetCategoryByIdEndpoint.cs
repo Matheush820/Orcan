@@ -3,6 +3,7 @@ using Orçan.Api.Handlers;
 using Orçan.Core.Models;
 using Orçan.Core.Requests.Categories;
 using Orçan.Core.Responses;
+using System.Security.Claims;
 
 namespace Orçan.Api.Common.Endpoints.Categories;
 
@@ -17,11 +18,14 @@ public class GetCategoryByIdEndpoint : IEndpoint
       .Produces<Response<Category?>>();
 
 
-    private static async Task<IResult> HandleAsync(ICategoryHandler handler, long id)
+    private static async Task<IResult> HandleAsync(
+        ClaimsPrincipal user,
+        ICategoryHandler handler,
+        long id)
     {
         var request = new GetCategoryByIdRequest
         {
-            UserId = "Matheuszin",
+            UserId = user.Identity?.Name ?? string.Empty,
             Id = id
         };
         var result = await handler.GetByIdAsync(request);

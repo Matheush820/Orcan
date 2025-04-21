@@ -5,6 +5,7 @@ using Orçan.Core.Models;
 using Orçan.Core.Requests.Categories;
 using Orçan.Core.Requests.Transactions;
 using Orçan.Core.Responses;
+using System.Security.Claims;
 
 namespace Orçan.Api.Common.Endpoints.Transactions;
 
@@ -21,10 +22,11 @@ public class CreateTransactionEndpoint : IEndpoint
 
 
     private static async Task<IResult> HandleAsync(
+        ClaimsPrincipal user,
         ITransactionHandler handler,
         CreateTransactionRequest request)
     {
-        request.UserId = "Matheuszin";
+        request.UserId = user.Identity?.Name ?? string.Empty;
         var result = await handler.CreateAsync(request);
         if (result.IsSuccess)
             return Results.Created($"/{result.Data?.Id}", result);

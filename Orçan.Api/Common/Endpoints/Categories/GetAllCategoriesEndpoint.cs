@@ -5,6 +5,7 @@ using Orçan.Core;
 using Orçan.Core.Models;
 using Orçan.Core.Requests.Categories.Herança;
 using Orçan.Core.Responses;
+using System.Security.Claims;
 
 namespace Orçan.Api.Common.Endpoints.Categories;
 
@@ -20,13 +21,14 @@ public class GetAllCategoriesEndpoint : IEndpoint
 
 
     private static async Task<IResult> HandleAsync(
+        ClaimsPrincipal user,
         ICategoryHandler handler,
         [FromQuery] int pageNumber = Configuration.DefaultPageNumber,
         [FromQuery] int pageSize = Configuration.DefaultPageSize)
     {
         var request = new GetCategoriesQuery
         {
-            UserId = "Matheuszin",
+            UserId = user.Identity?.Name ?? string.Empty,
             PageNumber = pageNumber,
             PageSize = pageSize
         };

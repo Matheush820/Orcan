@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|solutionrelative:or\u00E7an.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.webbw\\pages\\identity\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|solutionrelative:or\u00E7an.webbw\\pages\\identity\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.api\\handlers\\categoryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|solutionrelative:or\u00E7an.api\\handlers\\categoryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.webbw\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|solutionrelative:or\u00E7an.webbw\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7A2FFF-3D2C-4402-80C1-72E9211785C3}|Or\u00E7an.Core\\Or\u00E7an.Core.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.core\\or\u00E7an.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2F7A2FFF-3D2C-4402-80C1-72E9211785C3}|Or\u00E7an.Core\\Or\u00E7an.Core.csproj|solutionrelative:or\u00E7an.core\\or\u00E7an.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.webbw\\layout\\headlesslayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|solutionrelative:or\u00E7an.webbw\\layout\\headlesslayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.api\\or\u00E7an.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|solutionrelative:or\u00E7an.api\\or\u00E7an.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|solutionrelative:or\u00E7an.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.api\\handlers\\transactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25DB6F8B-B410-46A3-9F1B-F3A05E91C7B7}|Or\u00E7an.Api\\Or\u00E7an.Api.csproj|solutionrelative:or\u00E7an.api\\handlers\\transactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|c:\\users\\mathe\\documents\\cursobalta2\\or\u00E7an\\or\u00E7an.webbw\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D09423-D342-4F94-82A7-101026584DDC}|Or\u00E7an.Webbw\\Or\u00E7an.Webbw.csproj|solutionrelative:or\u00E7an.webbw\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Handlers\\CategoryHandler.cs",
-              "RelativeDocumentMoniker": "Or\u00E7an.Api\\Handlers\\CategoryHandler.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Handlers\\CategoryHandler.cs",
-              "RelativeToolTip": "Or\u00E7an.Api\\Handlers\\CategoryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T18:24:45.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Or\u00E7an.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Program.cs",
-              "RelativeToolTip": "Or\u00E7an.Api\\Program.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAIAwwE8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T17:45:54.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Or\u00E7an.Core",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Core\\Or\u00E7an.Core.csproj",
-              "RelativeDocumentMoniker": "Or\u00E7an.Core\\Or\u00E7an.Core.csproj",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Core\\Or\u00E7an.Core.csproj",
-              "RelativeToolTip": "Or\u00E7an.Core\\Or\u00E7an.Core.csproj",
+              "Title": "HeadlessLayout.razor",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Layout\\HeadlessLayout.razor",
+              "RelativeDocumentMoniker": "Or\u00E7an.Webbw\\Layout\\HeadlessLayout.razor",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Layout\\HeadlessLayout.razor",
+              "RelativeToolTip": "Or\u00E7an.Webbw\\Layout\\HeadlessLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-18T18:06:49.642Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T19:17:51.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Or\u00E7an.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Or\u00E7an.Api.csproj",
-              "RelativeDocumentMoniker": "Or\u00E7an.Api\\Or\u00E7an.Api.csproj",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Or\u00E7an.Api.csproj",
-              "RelativeToolTip": "Or\u00E7an.Api\\Or\u00E7an.Api.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-18T18:02:49.829Z",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Or\u00E7an.Webbw\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Or\u00E7an.Webbw\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T19:12:31.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TransactionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Handlers\\TransactionHandler.cs",
-              "RelativeDocumentMoniker": "Or\u00E7an.Api\\Handlers\\TransactionHandler.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Handlers\\TransactionHandler.cs",
-              "RelativeToolTip": "Or\u00E7an.Api\\Handlers\\TransactionHandler.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAkwHYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T18:00:17.311Z",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Pages\\Identity\\Login.razor",
+              "RelativeDocumentMoniker": "Or\u00E7an.Webbw\\Pages\\Identity\\Login.razor",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Pages\\Identity\\Login.razor",
+              "RelativeToolTip": "Or\u00E7an.Webbw\\Pages\\Identity\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T18:35:53.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Or\u00E7an.Api\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Api\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Or\u00E7an.Api\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T17:59:09.022Z",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Or\u00E7an.Webbw\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Or\u00E7an\\Or\u00E7an.Webbw\\Pages\\Home.razor",
+              "RelativeToolTip": "Or\u00E7an.Webbw\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T19:17:53.603Z",
               "EditorCaption": ""
             }
           ]

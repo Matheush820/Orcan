@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Orçan.Webbw.props" />
+</Project>

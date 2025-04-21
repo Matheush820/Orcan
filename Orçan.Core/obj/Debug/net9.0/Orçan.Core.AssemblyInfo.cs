@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orçan.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4dc2e6f4a11599de0c1a1eb305064d97754d66e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orçan.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orçan.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

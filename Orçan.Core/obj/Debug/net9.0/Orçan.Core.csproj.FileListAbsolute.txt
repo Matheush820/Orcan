@@ -5,6 +5,7 @@ C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.
 C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.AssemblyInfoInputs.cache
 C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.AssemblyInfo.cs
 C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.sourcelink.json
 C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.dll
 C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\refint\Orçan.Core.dll
 C:\Users\mathe\Documents\CursoBalta2\Orçan\Orçan.Core\obj\Debug\net9.0\Orçan.Core.pdb

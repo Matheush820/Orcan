@@ -5,6 +5,7 @@ using Orçan.Core.Responses;
 using Orçan.Core;
 using Orçan.Core.Handlers;
 using Orçan.Core.Requests.Transactions;
+using System.Security.Claims;
 
 namespace Orçan.Api.Common.Endpoints.Transactions;
 
@@ -20,6 +21,7 @@ public class GetTransactionByPeriodEndpoint : IEndpoint
 
 
     private static async Task<IResult> HandleAsync(
+        ClaimsPrincipal user,
         ITransactionHandler handler,
         [FromQuery] DateTime? startDate = null,
         [FromQuery] DateTime? endDate = null,
@@ -28,7 +30,7 @@ public class GetTransactionByPeriodEndpoint : IEndpoint
     {
         var request = new GetTransactionsByPeriodRequest
         {
-            UserId = "Matheuszin",
+            UserId = user.Identity?.Name ?? string.Empty,
             PageNumber = pageNumber,
             PageSize = pageSize,
             StartDate = startDate,

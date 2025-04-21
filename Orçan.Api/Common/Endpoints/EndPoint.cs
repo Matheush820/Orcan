@@ -1,6 +1,8 @@
 ﻿using Orçan.Api.Common.Api;
 using Orçan.Api.Common.Endpoints.Categories;
+using Orçan.Api.Common.Endpoints.Identity;
 using Orçan.Api.Common.Endpoints.Transactions;
+using Orçan.Api.Models;
 
 namespace Orçan.Api.Common.Endpoints;
 
@@ -11,9 +13,12 @@ public static class EndPoint
         var endpoints = app
             .MapGroup("");
 
+        endpoints.MapGroup("/")
+            .WithTags("Health check").MapGet("/", () => new { message = "OK" });
+        ;
         endpoints.MapGroup("v1/categories")
             .WithTags("Categories")
-            //.RequireAuthorization()
+            .RequireAuthorization()
             .MapEndPoint<CreateCategoryEndpoint>()
             .MapEndPoint<UpdateCategoryEndpoint>()
             .MapEndPoint<DeleteCategoryEndpoint>()
@@ -22,12 +27,21 @@ public static class EndPoint
 
         endpoints.MapGroup("v1/transaction")
            .WithTags("Categories")
-           //.RequireAuthorization()
+           .RequireAuthorization()
            .MapEndPoint<CreateTransactionEndpoint>()
            .MapEndPoint<UpdateTransactionEndpoint>()
            .MapEndPoint<DeleteTransactionEndpoint>()
            .MapEndPoint<GetTransactionByIdEndpoint>()
            .MapEndPoint<GetTransactionByPeriodEndpoint>();
+
+            endpoints.MapGroup("v1/identity")
+           .WithTags("Identity")
+           .MapIdentityApi<User>();
+
+        endpoints.MapGroup("v1/identity")
+       .WithTags("Identity")
+       .MapEndPoint<LogoutEndPoint>()
+       .MapEndPoint<GetRolesEndPoint>();
     }
 
     private static IEndpointRouteBuilder MapEndPoint<TEndoint>(this IEndpointRouteBuilder app)

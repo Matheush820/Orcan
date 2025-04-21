@@ -5,6 +5,7 @@ using Orçan.Core.Models;
 using Orçan.Core.Requests.Categories;
 using Orçan.Core.Requests.Transactions;
 using Orçan.Core.Responses;
+using System.Security.Claims;
 
 namespace Orçan.Api.Common.Endpoints.Transactions;
 
@@ -19,11 +20,14 @@ public class GetTransactionByIdEndpoint : IEndpoint
      .Produces<Response<Transaction?>>();
 
 
-    private static async Task<IResult> HandleAsync(ITransactionHandler handler, long id)
+    private static async Task<IResult> HandleAsync(
+        ClaimsPrincipal user,
+        ITransactionHandler handler,
+        long id)
     {
         var request = new GetTransactionByIdRequest
         {
-            UserId = "Matheuszin",
+            UserId = user.Identity?.Name ?? string.Empty,
             Id = id
         };
         var result = await handler.GetByIdAsync(request);
