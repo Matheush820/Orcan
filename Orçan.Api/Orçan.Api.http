@@ -1,6 +1,0 @@
-@Orçan.Api_HostAddress = http://localhost:5291
-
-GET {{Orçan.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

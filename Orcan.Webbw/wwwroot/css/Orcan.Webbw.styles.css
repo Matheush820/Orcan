@@ -1,0 +1,11 @@
+﻿namespace Orcan.Webbw.wwwroot.css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}

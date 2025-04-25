@@ -1,0 +1,12 @@
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\bin\Debug\net9.0\Orcan.Core.deps.json
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\bin\Debug\net9.0\Orcan.Core.dll
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\bin\Debug\net9.0\Orcan.Core.pdb
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\Orcan.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\Orcan.Core.AssemblyInfoInputs.cache
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\Orcan.Core.AssemblyInfo.cs
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\Orcan.Core.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\Orcan.Core.sourcelink.json
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\Orcan.Core.dll
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\refint\Orcan.Core.dll
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\Orcan.Core.pdb
+C:\Users\mathe\Documents\CursoBalta2\Orcan\Orcan.Core\obj\Debug\net9.0\ref\Orcan.Core.dll

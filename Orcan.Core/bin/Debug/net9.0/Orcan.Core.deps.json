@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Orcan.Core/1.0.0": {
+        "runtime": {
+          "Orcan.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Orcan.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

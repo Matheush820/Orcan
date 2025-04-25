@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Orcan.Api.props" />
+</Project>
