@@ -1,6 +1,6 @@
 ﻿namespace Orcan.Api;
 
-public class ApiConfiguration
+public static class ApiConfiguration
 {
-    public  const string CorsPolicyName = "wasm";
+    public const string CorsPolicyName = "wasm";
 }

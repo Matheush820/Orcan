@@ -1,0 +1,23 @@
+﻿@inherits LayoutComponentBase
+
+<style>
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #f5f5f5; 
+        color: #1b5e20; 
+    }
+</style>
+
+<MudThemeProvider Theme="Configuration.Theme"/>
+    <MudSnackbarProvider />
+
+    <MudLayout>
+        <MudMainContent>
+            <MudContainer MaxWidth="MaxWidth.Medium" Class="mt-4">
+                @Body
+            </MudContainer>
+        </MudMainContent>
+     </MudLayout>
+
+
+

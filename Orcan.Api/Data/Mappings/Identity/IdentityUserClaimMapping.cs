@@ -6,11 +6,11 @@ namespace Orcan.Api.Data.Mappings.Identity;
 
 public class IdentityUserClaimMapping : IEntityTypeConfiguration<IdentityUserClaim<long>>
 {
-    public void Configure(EntityTypeBuilder<IdentityUserClaim<long>> b)
+    public void Configure(EntityTypeBuilder<IdentityUserClaim<long>> builder)
     {
-        b.ToTable("IdentityClaim");
-        b.HasKey(uc => uc.Id);
-        b.Property(u => u.ClaimType).HasMaxLength(255);
-        b.Property(u => u.ClaimValue).HasMaxLength(255);
+        builder.ToTable("IdentityClaim");
+        builder.HasKey(uc => uc.Id);
+        builder.Property(uc => uc.ClaimType).HasMaxLength(255);
+        builder.Property(uc => uc.ClaimValue).HasMaxLength(255);
     }
 }

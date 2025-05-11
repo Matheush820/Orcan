@@ -1,27 +1,6 @@
 [
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.EndPoint\u002B\u003C\u003Ec",
-    "Method": "\u003CMapEndpoints\u003Eb__0_0",
-    "RelativePath": "",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "\u003C\u003Ef__AnonymousType0\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "Tags": [
-      "Health check"
-    ]
-  },
-  {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.CreateCategoryEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.CreateCategoryEndPoint",
     "Method": "HandleAsync",
     "RelativePath": "v1/categories/",
     "HttpMethod": "POST",
@@ -48,10 +27,10 @@
     ],
     "EndpointName": "Categories: Create",
     "Description": "Categoria criada",
-    "Summary": "Cria uma nova categoria"
+    "Summary": "Cria uma nova cateogria"
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.GetAllCategoriesEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.GetAllCategoriesEndPoint",
     "Method": "HandleAsync",
     "RelativePath": "v1/categories/",
     "HttpMethod": "GET",
@@ -82,11 +61,11 @@
       "Categories"
     ],
     "EndpointName": "Categories: Get All",
-    "Description": "Recupera todas as categoria ",
-    "Summary": "Recupera todas as categoria"
+    "Description": "Categoria todas as categoriasa",
+    "Summary": "Recupera todas as categorias"
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.UpdateCategoryEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.UpdateCategoryEndPoint",
     "Method": "HandleAsync",
     "RelativePath": "v1/categories/{id}",
     "HttpMethod": "PUT",
@@ -117,11 +96,11 @@
       "Categories"
     ],
     "EndpointName": "Categories: Update",
-    "Description": "Categoria atualizada",
-    "Summary": "Atualiza uma categoria"
+    "Description": "Categoria Atualizada",
+    "Summary": "Atualiza uma cateogria"
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.DeleteCategoryEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Categories.DeleteCategoryEndPoint",
     "Method": "HandleAsync",
     "RelativePath": "v1/categories/{id}",
     "HttpMethod": "DELETE",
@@ -148,7 +127,7 @@
     ],
     "EndpointName": "Categories: Delete",
     "Description": "Categoria Deletada",
-    "Summary": "Deleta uma categoria"
+    "Summary": "Deleta uma cateogria"
   },
   {
     "ContainingType": "Orcan.Api.Common.Endpoints.Categories.GetCategoryByIdEndpoint",
@@ -177,8 +156,8 @@
       "Categories"
     ],
     "EndpointName": "Categories: Get By Id",
-    "Description": "Recupera uma categoria ",
-    "Summary": "Recupera uma categoria"
+    "Description": "Categoria Recuperada",
+    "Summary": "Recupera uma cateogria pelo Id"
   },
   {
     "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Orcan.Api.Models.User, Orcan.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -249,26 +228,6 @@
     ]
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Identity.GetRolesEndPoint",
-    "Method": "HandleAsync",
-    "RelativePath": "v1/identity/get",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ],
-    "Tags": [
-      "Identity"
-    ],
-    "EndpointName": "Identity: GetRoles"
-  },
-  {
     "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Orcan.Api.Models.User, Orcan.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "\u003CMapIdentityApi\u003Eb__1_1",
     "RelativePath": "v1/identity/login",
@@ -322,8 +281,7 @@
     ],
     "Tags": [
       "Identity"
-    ],
-    "EndpointName": "Identity: Create"
+    ]
   },
   {
     "ContainingType": "Microsoft.AspNetCore.Routing.IdentityApiEndpointRouteBuilderExtensions\u002B\u003C\u003Ec__1\u00601[[Orcan.Api.Models.User, Orcan.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -553,9 +511,28 @@
     ]
   },
   {
+    "ContainingType": "Orcan.Api.Common.Endpoints.Identity.GetRolesEndPoint",
+    "Method": "HandleAsync",
+    "RelativePath": "v1/identity/roles",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Identity"
+    ]
+  },
+  {
     "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.CreateTransactionEndpoint",
     "Method": "HandleAsync",
-    "RelativePath": "v1/transaction/",
+    "RelativePath": "v1/transactions/",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
@@ -576,16 +553,16 @@
       }
     ],
     "Tags": [
-      "Categories"
+      "Transactions"
     ],
     "EndpointName": "Transactions: Create",
     "Description": "Transa\u00E7\u00E3o criada",
     "Summary": "Cria uma nova transa\u00E7\u00E3o"
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.GetTransactionByPeriodEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.GetTransactionByPeriodEndPoint",
     "Method": "HandleAsync",
-    "RelativePath": "v1/transaction/",
+    "RelativePath": "v1/transactions/",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -621,16 +598,16 @@
       }
     ],
     "Tags": [
-      "Categories"
+      "Transactions"
     ],
     "EndpointName": "Transactions: Get All",
-    "Description": "Recupera todas as transa\u00E7\u00F5es ",
+    "Description": "Transa\u00E7\u00F5es todas as categoriasa",
     "Summary": "Recupera todas as transa\u00E7\u00F5es"
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.UpdateTransactionEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.UpdateTransactionEndPoint",
     "Method": "HandleAsync",
-    "RelativePath": "v1/transaction/{id}",
+    "RelativePath": "v1/transactions/{id}",
     "HttpMethod": "PUT",
     "IsController": false,
     "Order": 0,
@@ -656,16 +633,16 @@
       }
     ],
     "Tags": [
-      "Categories"
+      "Transactions"
     ],
     "EndpointName": "Transactions: Update",
-    "Description": "Transa\u00E7\u00E3o atualizada",
+    "Description": "Transa\u00E7\u00E3o Atualizada",
     "Summary": "Atualiza uma transa\u00E7\u00E3o"
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.DeleteTransactionEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.DeleteTransactionEndPoint",
     "Method": "HandleAsync",
-    "RelativePath": "v1/transaction/{id}",
+    "RelativePath": "v1/transactions/{id}",
     "HttpMethod": "DELETE",
     "IsController": false,
     "Order": 0,
@@ -686,16 +663,16 @@
       }
     ],
     "Tags": [
-      "Categories"
+      "Transactions"
     ],
-    "EndpointName": "Transaction: Delete",
+    "EndpointName": "Transactions: Delete",
     "Description": "Transa\u00E7\u00E3o Deletada",
     "Summary": "Deleta uma transa\u00E7\u00E3o"
   },
   {
-    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.GetTransactionByIdEndpoint",
+    "ContainingType": "Orcan.Api.Common.Endpoints.Transactions.GetTransactionByIdEndPoint",
     "Method": "HandleAsync",
-    "RelativePath": "v1/transaction/{id}",
+    "RelativePath": "v1/transactions/{id}",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -716,10 +693,10 @@
       }
     ],
     "Tags": [
-      "Categories"
+      "Transactions"
     ],
-    "EndpointName": "Transaction: Get By Id",
-    "Description": "Recupera uma transa\u00E7\u00E3o ",
-    "Summary": "Recupera uma transa\u00E7\u00E3o"
+    "EndpointName": "Transactions: Get By Id",
+    "Description": "Transa\u00E7\u00E3o Recuperada",
+    "Summary": "Recupera uma transa\u00E7\u00E3o pelo Id"
   }
 ]

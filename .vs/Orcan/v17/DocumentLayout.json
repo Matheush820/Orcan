@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Orcan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96EE91DF-10E1-4068-A4DB-65314F94162A}|Orcan.Webbw\\Orcan.Webbw.csproj|c:\\users\\mathe\\documents\\cursobalta2\\orcan\\orcan.webbw\\pages\\identity\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96EE91DF-10E1-4068-A4DB-65314F94162A}|Orcan.Webbw\\Orcan.Webbw.csproj|solutionrelative:orcan.webbw\\pages\\identity\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD15B2EF-6BAE-4267-8501-25C33A1EFF98}|Orcan.Api\\Orcan.Api.csproj|c:\\users\\mathe\\documents\\cursobalta2\\orcan\\orcan.api\\data\\views\\v2getexpensesbycategory.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{DD15B2EF-6BAE-4267-8501-25C33A1EFF98}|Orcan.Api\\Orcan.Api.csproj|solutionrelative:orcan.api\\data\\views\\v2getexpensesbycategory.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96EE91DF-10E1-4068-A4DB-65314F94162A}|Orcan.Webbw\\Orcan.Webbw.csproj|c:\\users\\mathe\\documents\\cursobalta2\\orcan\\orcan.webbw\\pages\\identity\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96EE91DF-10E1-4068-A4DB-65314F94162A}|Orcan.Webbw\\Orcan.Webbw.csproj|solutionrelative:orcan.webbw\\pages\\identity\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD15B2EF-6BAE-4267-8501-25C33A1EFF98}|Orcan.Api\\Orcan.Api.csproj|c:\\users\\mathe\\documents\\cursobalta2\\orcan\\orcan.api\\data\\views\\v2getexpensesbycategory.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{DD15B2EF-6BAE-4267-8501-25C33A1EFF98}|Orcan.Api\\Orcan.Api.csproj|solutionrelative:orcan.api\\data\\views\\v2getexpensesbycategory.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +26,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.razor.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Orcan\\Orcan.Webbw\\Pages\\Identity\\Login.razor.cs",
-              "RelativeDocumentMoniker": "Orcan.Webbw\\Pages\\Identity\\Login.razor.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Orcan\\Orcan.Webbw\\Pages\\Identity\\Login.razor.cs",
-              "RelativeToolTip": "Orcan.Webbw\\Pages\\Identity\\Login.razor.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA9wCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T20:35:50.823Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Orcan\\Orcan.Webbw\\Pages\\Identity\\Login.razor",
-              "RelativeDocumentMoniker": "Orcan.Webbw\\Pages\\Identity\\Login.razor",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Orcan\\Orcan.Webbw\\Pages\\Identity\\Login.razor",
-              "RelativeToolTip": "Orcan.Webbw\\Pages\\Identity\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T19:08:09.811Z",
+              "Title": "V2GetExpensesByCategory.sql ",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Orcan\\Orcan.Api\\Data\\Views\\V2GetExpensesByCategory.sql",
+              "RelativeDocumentMoniker": "Orcan.Api\\Data\\Views\\V2GetExpensesByCategory.sql",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\CursoBalta2\\Orcan\\Orcan.Api\\Data\\Views\\V2GetExpensesByCategory.sql",
+              "RelativeToolTip": "Orcan.Api\\Data\\Views\\V2GetExpensesByCategory.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-11T20:45:47.177Z",
               "EditorCaption": ""
             }
           ]

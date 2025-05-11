@@ -12,40 +12,44 @@ public static class BuilderExtension
 {
     public static void AddConfiguration(this WebApplicationBuilder builder)
     {
-       Configuration.ConnectionString = builder
-            .Configuration.
-            GetConnectionString("DefaultConnection");
+        Configuration.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? string.Empty;
+
+        Configuration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? string.Empty;
+        Configuration.FrontendUrl = builder.Configuration.GetValue<string>("FrontendUrl") ?? string.Empty;
+
     }
 
     public static void AddDocumentation(this WebApplicationBuilder builder)
     {
-        builder.Services.AddSwaggerGen(options =>
-        {
-            options.CustomSchemaIds(type => type.FullName);
-        });
         builder.Services.AddEndpointsApiExplorer();
-        Configuration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? string.Empty;
-        Configuration.FrontendUrl = builder.Configuration.GetValue<string>("FrontendUrl") ?? string.Empty;
+        builder.Services.AddSwaggerGen(x =>
+        {
+            x.CustomSchemaIds(type => type.FullName);
+        });
     }
-
     public static void AddSecurity(this WebApplicationBuilder builder)
     {
-        builder.Services
-    .AddAuthentication(IdentityConstants.ApplicationScheme)
-    .AddIdentityCookies();
+        builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
+            .AddCookie(IdentityConstants.ApplicationScheme, options =>
+            {
+                options.LoginPath = "/v1/identity/login"; 
+                options.Cookie.HttpOnly = true;
+                options.Cookie.SameSite = SameSiteMode.Lax; 
+                options.Cookie.SecurePolicy = CookieSecurePolicy.None; 
+            });
 
         builder.Services.AddAuthorization();
     }
 
     public static void AddDataContexts(this WebApplicationBuilder builder)
     {
-        // Configuração do DbContext com o SQL Server
         builder.Services.AddDbContext<AppDbContext>(x =>
         {
-            x.UseSqlServer(Configuration.ConnectionString); // Agora UseSqlServer será reconhecido
+            x.UseSqlServer(Configuration.ConnectionString);
         });
 
-        builder.Services.AddIdentityCore<User>()
+        builder.Services
+            .AddIdentityCore<User>()
             .AddRoles<IdentityRole<long>>()
             .AddEntityFrameworkStores<AppDbContext>()
             .AddApiEndpoints();
@@ -59,17 +63,15 @@ public static class BuilderExtension
 
     public static void AddCrossOrigin(this WebApplicationBuilder builder)
     {
-        builder.Services.AddCors(
-            options => options.AddPolicy(ApiConfiguration.CorsPolicyName,
-            policy =>
-            {
-                policy
-                .WithOrigins([Configuration.BackendUrl, 
-                    Configuration.FrontendUrl
-                ])
-                    .AllowAnyHeader()
+        builder.Services.AddCors(options =>
+            options.AddPolicy(ApiConfiguration.CorsPolicyName, policy =>
+                policy.WithOrigins(
+                        Configuration.BackendUrl,
+                        Configuration.FrontendUrl
+                    )
                     .AllowAnyMethod()
-                    .AllowCredentials();
-            }));
+                    .AllowAnyHeader()
+                    .AllowCredentials()));  // Permite o envio de cookies
     }
+
 }

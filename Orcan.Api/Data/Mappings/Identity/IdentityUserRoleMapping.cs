@@ -6,9 +6,9 @@ namespace Orcan.Api.Data.Mappings.Identity;
 
 public class IdentityUserRoleMapping : IEntityTypeConfiguration<IdentityUserRole<long>>
 {
-    public void Configure(EntityTypeBuilder<IdentityUserRole<long>> b)
+    public void Configure(EntityTypeBuilder<IdentityUserRole<long>> builder)
     {
-        b.ToTable("IdentityUserRole");
-        b.HasKey(r => new { r.UserId, r.RoleId });
+        builder.ToTable("IdentityUserRole");
+        builder.HasKey(ur => new { ur.UserId, ur.RoleId });
     }
 }

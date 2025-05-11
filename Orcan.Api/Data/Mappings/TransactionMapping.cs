@@ -10,31 +10,32 @@ public class TransactionMapping : IEntityTypeConfiguration<Transaction>
     {
         builder.ToTable("Transaction");
 
-        builder.HasKey(t => t.Id);
+        builder.HasKey(c => c.Id);
 
-        builder.Property(t => t.Title)
+        builder.Property(x => x.Title)
             .IsRequired()
             .HasColumnType("NVARCHAR")
-            .HasMaxLength(100);
+            .HasMaxLength(80);
 
-        builder.Property(t => t.Type)
+        builder.Property(x => x.Type)
             .IsRequired()
-         .HasColumnType("SMALLINT");
+            .HasColumnType("SMALLINT"); 
+        
+        builder.Property(x => x.Amount)
+            .IsRequired()
+            .HasColumnType("MONEY"); 
+        
+        builder.Property(x => x.CreatedAt)
+            .IsRequired(); 
+        
+        builder.Property(x => x.PaidOrReceivedAt)
+            .IsRequired(); 
+        
+        builder.Property(x => x.UserId)
+            .IsRequired()
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(160);
 
-        builder.Property(t => t.Amount)
-         .IsRequired()
-         .HasColumnType("MONEY");
-
-        builder.Property(t => t.CreatedAt)
-         .IsRequired();
-
-        builder.Property(t => t.PaiOrReceivedAt)
-         .IsRequired();
-
-        builder.Property(t => t.UserId)
-         .IsRequired()
-         .HasColumnType("NVARCHAR")
-         .HasMaxLength(160);
 
     }
 }

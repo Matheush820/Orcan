@@ -1,0 +1,19 @@
+﻿@page "/sair"
+@inherits LogoutPage
+@layout HeadlessLayout
+
+<PageTitle>Orcan - Sair</PageTitle>
+
+<MudText Typo="Typo.h3">Finalizando Sessão</MudText>
+
+<MudPaper Class="pa-8  mt-4">
+
+    <MudAlert Severity="Severity.Info">
+        Sessão finalizada...
+        <div>
+            <MudButton Variant="Variant.Text" Href="/login">
+                Ir para tela de login
+            </MudButton>
+        </div>
+    </MudAlert>
+</MudPaper>

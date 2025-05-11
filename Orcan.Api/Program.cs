@@ -1,34 +1,33 @@
-ï»¿using Orcan.Api;
 using Orcan.Api.Common.Api;
-using Orcan.Api.Common.Endpoints;
+using Orcan.Api.Endpoints;
+using Orcan.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddConfiguration();
+// Configurações e serviços
+builder.AddConfiguration(); // Lembre-se de corrigir o nome para AddConfiguration
 builder.AddSecurity();
 builder.AddDataContexts();
 builder.AddCrossOrigin();
 builder.AddDocumentation();
 builder.AddServices();
 
-// Adicionando os serviÃ§os ao cont0ainer de injeÃ§Ã£o de dependÃªncias
 builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi();  // Configure OpenAPI para documentação
 
 var app = builder.Build();
 
-// ConfiguraÃ§Ã£o do pipeline de requisiÃ§Ã£o HTTP
+// Ambiente de desenvolvimento (Swagger)
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();          // Para usar OpenAPI (caso necessÃ¡rio)
     app.ConfigureDevEnvironment();
 }
 
-app.UseCors(ApiConfiguration.CorsPolicyName);
-app.UseHttpsRedirection();
-app.UseSecutiry();
-app.MapControllers();
+// Pipeline de Middlewares
+app.UseCors(ApiConfiguration.CorsPolicyName);  // Aplique CORS antes da autenticação
+app.UseHttpsRedirection();  // Redirecionamento HTTPS
+app.UseSecurity();  // Configura autenticação e autorização
+app.MapControllers();  // Mapeamento dos controladores
+app.MapEndpoints();  // Mapeamento dos endpoints
 
-app.MapEndpoints();
-
-app.Run();
+app.Run();  // Inicia o servidor

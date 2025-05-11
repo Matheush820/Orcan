@@ -6,12 +6,11 @@ namespace Orcan.Api.Data.Mappings.Identity;
 
 public class IdentityRoleClaimMapping : IEntityTypeConfiguration<IdentityRoleClaim<long>>
 {
-    public void Configure(EntityTypeBuilder<IdentityRoleClaim<long>> b)
+    public void Configure(EntityTypeBuilder<IdentityRoleClaim<long>> builder)
     {
-        b.ToTable("IdentityRoleClaim");
-        b.HasKey(rc => rc.Id);
-
-        b.Property(rc => rc.ClaimType).HasMaxLength(255);
-        b.Property(rc => rc.ClaimValue).HasMaxLength(255);
+        builder.ToTable("IdentityRoleClaim");
+        builder.HasKey(rc => rc.Id);
+        builder.Property(rc => rc.ClaimType).HasMaxLength(255);
+        builder.Property(rc => rc.ClaimValue).HasMaxLength(255);
     }
 }

@@ -49,6 +49,7 @@ namespace Orcan.Api.Migrations
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.HasIndex("UserId");
@@ -76,6 +77,8 @@ namespace Orcan.Api.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("IdentityRoleClaim", (string)null);
                 });
@@ -109,12 +112,12 @@ namespace Orcan.Api.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<long>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasMaxLength(255)
@@ -127,7 +130,7 @@ namespace Orcan.Api.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("IdentityUserLogins", (string)null);
+                    b.ToTable("IdentityUserLogin", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<long>", b =>
@@ -140,6 +143,8 @@ namespace Orcan.Api.Migrations
 
                     b.HasKey("UserId", "RoleId");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("IdentityUserRole", (string)null);
                 });
 
@@ -149,19 +154,19 @@ namespace Orcan.Api.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasMaxLength(180)
+                        .HasColumnType("nvarchar(180)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
-                    b.ToTable("IdentityUserTokens", (string)null);
+                    b.ToTable("IdentityUserToken", (string)null);
                 });
 
             modelBuilder.Entity("Orcan.Api.Models.User", b =>
@@ -224,13 +229,15 @@ namespace Orcan.Api.Migrations
 
                     b.HasIndex("NormalizedEmail")
                         .IsUnique()
+                        .HasDatabaseName("EmailIndex")
                         .HasFilter("[NormalizedEmail] IS NOT NULL");
 
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.ToTable("IdentityUsers", (string)null);
+                    b.ToTable("IdentityUser", (string)null);
                 });
 
             modelBuilder.Entity("Orcan.Core.Models.Category", b =>
@@ -242,12 +249,12 @@ namespace Orcan.Api.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Description")
-                        .HasMaxLength(255)
+                        .HasMaxLength(160)
                         .HasColumnType("NVARCHAR");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(100)
+                        .HasMaxLength(80)
                         .HasColumnType("NVARCHAR");
 
                     b.Property<string>("UserId")
@@ -277,12 +284,12 @@ namespace Orcan.Api.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("PaiOrReceivedAt")
+                    b.Property<DateTime>("PaidOrReceivedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(100)
+                        .HasMaxLength(80)
                         .HasColumnType("NVARCHAR");
 
                     b.Property<short>("Type")
@@ -291,7 +298,7 @@ namespace Orcan.Api.Migrations
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasMaxLength(160)
-                        .HasColumnType("NVARCHAR");
+                        .HasColumnType("VARCHAR");
 
                     b.HasKey("Id");
 
@@ -305,6 +312,15 @@ namespace Orcan.Api.Migrations
                     b.HasOne("Orcan.Api.Models.User", null)
                         .WithMany("Roles")
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<long>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<long>", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<long>", b =>
@@ -327,6 +343,12 @@ namespace Orcan.Api.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<long>", b =>
                 {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<long>", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Orcan.Api.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")

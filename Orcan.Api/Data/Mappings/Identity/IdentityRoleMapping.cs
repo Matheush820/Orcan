@@ -6,14 +6,13 @@ namespace Orcan.Api.Data.Mappings.Identity;
 
 public class IdentityRoleMapping : IEntityTypeConfiguration<IdentityRole<long>>
 {
-    public void Configure(EntityTypeBuilder<IdentityRole<long>> b)
+    public void Configure(EntityTypeBuilder<IdentityRole<long>> builder)
     {
-        b.ToTable("IdentityRole");
-        b.HasKey(r => r.Id);
-
-        b.HasIndex(r => r.NormalizedName).IsUnique();
-        b.Property(r => r.ConcurrencyStamp).IsConcurrencyToken();
-        b.Property(r => r.Name).HasMaxLength(256);
-        b.Property(r => r.NormalizedName).HasMaxLength(256);
+        builder.ToTable("IdentityRole");
+        builder.HasKey(r => r.Id);
+        builder.HasIndex(r => r.NormalizedName).IsUnique();
+        builder.Property(r => r.ConcurrencyStamp).IsConcurrencyToken();
+        builder.Property(r => r.Name).HasMaxLength(256);
+        builder.Property(r => r.NormalizedName).HasMaxLength(256);
     }
 }
